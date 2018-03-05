@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Train Time</title>
+
+		<!-- Link to Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+			crossorigin="anonymous">
+		
+		<!-- Link to jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+
+		<!-- Link to Firebase -->
+		<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+		<!-- Link to Moment.js -->
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/af.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+		<!-- Link to mystyle CSS -->
+		<link rel='stylesheet' href='assets/mystyle.css'>
+		
+		<link rel='stylesheet' href='assets/3dPopUp.css'>
+
+		
+
+
+	</head>
+
+	<body>
+		<!-- Jumbotron -->
+		<div class="jumbotron">
+			
+			<h1 class="text-center"> Train<b>Time</b> Sche<b>dule</b> </h1>
+						
+		</div>
+			
+
+
+			<div class="container schedule-container">
+				<div class="row">
+
+					<!-- Display Table-->
+					<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+
+						<div class="panel panel-primary">
+
+							<div class="panel-heading">
+								<h3 class="panel-title">Current Train Schedule</h3>
+							</div>
+							<div class="panel-body">
+
+								<!-- Display Table Properties -->
+								<table class="train-schedule">
+									<tr>
+										<th class="col-xs-3"> Train Name </th>
+
+										<th class="col-xs-2"> Destination </th>
+										
+										<th class="col-xs-2"> Frequency (minutes) </th>
+										
+										<th class="col-xs-2"> Next Arrival </th>
+										
+										<th class="col-xs-2"> Minutes Away </th>
+										
+									</tr>
+								</table>
+
+							</div>
+							<!-- closes panel-body -->
+						</div>
+						<!-- closes entire panel -->
+					</div>
+					<!-- closes col -->
+				</div>
+				<!-- closes row -->
+			</div>
+			<!-- closes container -->
+
+			<div class="container input-container">
+				<div class="row">
+
+					<!-- Input Panel -->
+					<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+						<div class="panel panel-primary">
+
+							<div class="panel-heading">
+								<h3 class="panel-title">Add Your Train Information</h3>
+							</div>
+							<div class="panel-body">
+
+								<!-- Input information -->
+								<form role="form">
+
+									<div class="form-group">
+										<label for="text"> Name of The Train </label>
+										<input type="text" class="form-control" id="name-input">
+									</div>
+
+									<div class="form-group">
+										<label for="text">Destination of The Train </label>
+										<input type="text" class="form-control" id="destination-input">
+									</div>
+
+									<div class="form-group">
+										<label for="text">First Train Time of The Day (HH:mm - military time)</label>
+										<input type="text" class="form-control" id="firstTrainTime-input">
+									</div>
+
+									<div class="form-group">
+										<label for="comment">Frequency of The Train (minutes)</label>
+										<input type="text" class="form-control" id="frequency-input">
+									</div>
+
+									<button type="submit" class="btn btn-primary" id="add-train">Submit</button>
+								</form>
+
+							</div>
+							<!-- closes panel-body -->
+						</div>
+						<!-- closes panel-default -->
+					</div>
+					<!-- closes col -->
+				</div>
+				<!-- closes row -->
+			</div>
+			<!-- closes container -->
+
+
+
+			<!-- Link to myscript JavaScript -->
+			<script type='text/javascript' src='assets/myscript.js'></script>
+			<script type='text/javascript' src='assets/3dPopUp.js'></script>
+	</body>
+
+</html>
